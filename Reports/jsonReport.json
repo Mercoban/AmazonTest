@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-10T10:59:50.218Z",
+        "line": 3,
+        "name": "Create Board",
+        "description": "",
+        "id": "trello;create-board",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2491328700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send POST request for create \"mart\" board",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mart\"",
+                  "offset": 29
+                }
+              ],
+              "location": "api.stepdefinitions.createBoard.sendPOSTRequestForCreateBoard(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Assert status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "api.stepdefinitions.createBoard.assertStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 574748500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Assert board name is \"mart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mart\"",
+                  "offset": 21
+                }
+              ],
+              "location": "api.stepdefinitions.createBoard.assertBoardNameIs(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api1"
+          }
+        ]
+      }
+    ],
+    "name": "trello",
+    "description": "",
+    "id": "trello",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/apiFeature/createBoard.feature",
+    "tags": []
+  }
+]

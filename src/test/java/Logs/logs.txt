@@ -1,0 +1,1 @@
+2022-03-09 11:38:55 INFO  AmazonStepDefinitions:33 - anasayfa açıldı
